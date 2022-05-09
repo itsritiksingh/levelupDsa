@@ -1,0 +1,23 @@
+// minCostClimbingStairs 746
+
+    public int minCostClimbingStairs(int[] cost) {
+        int n = cost.length;
+        if(n == 0) return 0;
+        int[] dp = new int[n];
+//         for(int idx = 1;idx < n;idx++){
+//             cost[idx] = Math.min(cost[idx - 1], idx - 2 < 0 ? 0 : cost[idx - 2]) + cost[idx];
+//         }
+        
+//         return Math.min(cost[n -1],cost[n-2]);
+            climb_memo(cost,n- 1,dp);
+            return Math.min(dp[n-1],dp[n-2]);
+    }
+    private int climb_memo(int[] cost, int idx,int dp[]) {
+        if(idx <0 ) return 0;
+        
+        if(dp[idx] !=0) return dp[idx];
+        int a = climb_memo(cost,idx - 1,dp)+ cost[idx];
+        int b = climb_memo(cost,idx - 2,dp)+ cost[idx];
+
+        return dp[idx] = Math.min(a,b);
+    }
