@@ -55,3 +55,54 @@
         
         return dp[idx] = Math.max(a,b);
     }
+    
+    354 https://leetcode.com/problems/russian-doll-envelopes/
+       //using memo n^2 
+//     public int maxEnvelopes(int[][] envelopes) {
+//        int maxLen = 0;
+//         int dp[] = new int[envelopes.length];
+//         Arrays.sort(envelopes, (a, b) -> {
+//             return a[0] - b[0];
+//         });
+//         for(int i = 0;i < envelopes.length;i++){
+//             maxLen = Math.max(maxLen,count(envelopes,i,dp));
+//         }
+//         return maxLen;
+//     }
+//     public int count(int [][] envelopes,int idx,int dp[]){
+//         if(dp[idx] != 0) return dp[idx];
+//         int maxLen = 1;
+//         for(int j = idx - 1; j >= 0; j--){
+//             if(envelopes[j][0] < envelopes[idx][0] && envelopes[j][1] < envelopes[idx][1]){
+//              int recAns = count(envelopes,j,dp);
+//             maxLen = Math.max(maxLen,recAns + 1);
+//             }
+//         }
+        
+//         return dp[idx] =  maxLen;
+//     }
+  public int maxEnvelopes(int[][] envelopes) {
+        Arrays.sort(envelopes, (a,b) -> a[0] != b[0] ? a[0]-b[0] : b[1] - a[1]);  // custom sorting, first sort the array by width if width not same then sort by height
+        
+        int[] tails = new int[envelopes.length];  // lis
+        int size = 0;
+        
+        for(int[] enve : envelopes) {
+            int i = 0, j = size;
+            
+            while(i != j) {
+                int mid = i + ((j - i) >> 1);  // same as int mid = i + ((j - i) /2;
+                
+                if(tails[mid] < enve[1])
+                    i = mid+1;
+                else
+                    j = mid;
+            }
+            tails[i] = enve[1];
+            if(i == size)
+                size++;
+        }
+        
+        return size;
+    }
+
