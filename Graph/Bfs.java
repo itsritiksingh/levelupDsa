@@ -109,6 +109,8 @@ class Solution {
     }
 }
 
+// https://leetcode.com/problems/coloring-a-border/
+// 1034. Coloring A Border
 class Solution {
     class Pair {
         int i;
@@ -187,5 +189,47 @@ class Solution {
                 return false;
             }
         }
+    }
+}
+
+// 924. Minimize Malware Spread
+// https://leetcode.com/problems/minimize-malware-spread/
+
+class Solution {
+    public int minMalwareSpread(int[][] graph, int[] infected) {
+        HashSet<Integer> setInfected = new HashSet<>();
+        Arrays.sort(infected);
+        int count = 0;
+        for(int val: infected){
+            setInfected.add(val);
+        }
+        int ans = infected[0]; 
+        for(int curr=0 ;curr<infected.length; curr++){
+            boolean[] visited = new boolean[graph.length];
+            int temp = dfs(graph, visited, infected[curr], infected[curr], setInfected);
+            if(temp>count){
+                count = temp;
+                ans = infected[curr];
+            }
+        }
+        return ans;
+    }
+    static int dfs(int[][] graph, boolean[] visited, int initialInfected, int curr, HashSet<Integer> setInfected){
+        if(visited[curr]){
+            return 0;
+        }
+        if(curr!=initialInfected && setInfected.contains(curr)){
+            return Integer.MIN_VALUE;
+        }
+        visited[curr] = true;
+        int count=0;
+        for(int nbr=0; nbr<graph[curr].length; nbr++){
+            if(graph[curr][nbr]==1 && visited[nbr]==false){
+                int val = dfs(graph, visited, initialInfected, nbr, setInfected);
+                if(val==Integer.MIN_VALUE){ return val;}
+                count+= val;
+            }   
+        }
+        return count+1;
     }
 }
