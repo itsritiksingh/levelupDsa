@@ -228,3 +228,99 @@ class Solution {
         return res;
     }
 }
+// https://leetcode.com/problems/boats-to-save-people/
+// 881. Boats to Save People
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        int ans = 0;
+        Arrays.sort(people);
+        int l = 0;
+        int r = people.length - 1;
+        while(l < r){
+            int val = people[l] + people[r];
+            if(val <= limit){
+                ans++;
+                l++;
+                r--;
+            } else {
+                ans++;
+                r--;
+            }
+        }
+        if(l == r){
+            ans += 1;
+        }
+        return ans;
+    }
+}
+// https://practice.geeksforgeeks.org/problems/key-pair5616/1
+// Key Pair
+class Solution {
+    boolean hasArrayTwoCandidates(int arr[], int n, int x) {       
+        Arrays.sort(arr);
+        int l = 0;
+        int r = arr.length - 1;
+        while(l < r){
+            if(arr[l] + arr[r] < x){
+                l++;
+            } else if(arr[l] + arr[r] > x){
+                r--;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+// https://practice.geeksforgeeks.org/problems/find-pair-given-difference1559/1
+// Find Pair Given Difference
+class Solution
+{
+    public boolean findPair(int arr[], int size, int n){
+        Arrays.sort(arr);
+        int j = 0;
+        int i = 1;
+        while(i < arr.length){
+            if(arr[i] - arr[j] > n){
+                j++;
+                if(j == i){
+                    i++;
+                }
+            } else if(arr[i] - arr[j] < n){
+                i++;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+//best meeting point
+// 1. A group of two or more people wants to meet and minimize the total travel distance.
+// 2. You are given a 2D grid of values 0 or 1, where each 1 marks the home of someone in the group. 
+// https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/arrays-and-strings/best-meeting-point/ojquestion
+    public static int minTotalDistance(int[][] grid) {
+        ArrayList<Integer> xcord = new ArrayList<>();
+        ArrayList<Integer> ycord = new ArrayList<>();
+        for(int r = 0; r < grid.length; r++) {
+            for(int c = 0; c < grid[0].length; c++) {
+                if(grid[r][c] == 1) {
+                    xcord.add(r);
+                }
+            }
+        }
+        for(int c = 0; c < grid[0].length; c++) {
+            for(int r = 0; r < grid.length; r++) {
+                if(grid[r][c] == 1) {
+                    ycord.add(c);
+                }
+            }
+        }
+        int x = xcord.get(xcord.size() / 2);
+        int y = ycord.get(ycord.size() / 2);
+        int dist = 0;
+        for(int i = 0; i < xcord.size(); i++) {
+            dist += Math.abs(xcord.get(i) - x) + Math.abs(ycord.get(i) - y);
+        }
+        return dist;
+    }
