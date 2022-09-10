@@ -436,7 +436,7 @@ public class Main {
             if (root.left == null || root.right == null) {
                 return root.left == null ? root.right : root.left;
             }
-            //you can also replace it with inorder predessor
+            //you can also replace it with inorder successor
             root.val = findIOS(root.right);
             root.right = deleteNode(root.right,root.val);
         }

@@ -85,7 +85,6 @@ class Solution
         max = Integer.MIN_VALUE;
         helper(root);
         return max;
-        
     } 
     
     // it returns maximum root to leaf
