@@ -156,3 +156,187 @@ class Solution {
         return lams;
     }
 }
+// https://www.interviewbit.com/problems/allocate-books/
+// Ques : You have to allocate books to B number of students so that maximum number of pages alloted to a student is minimum.
+public class Solution {
+    public int books(ArrayList<Integer> A, int B) {
+        if(A.size() < B){
+            return -1;
+        }
+        int lo = Integer.MIN_VALUE;
+        int hi = 0;
+        for(int val: A){
+            lo = Math.max(val, lo);
+            hi += val;
+        }
+        while(lo < hi){
+            int allot = (lo + hi) / 2;
+            int reqd = 1;
+            int curr = 0;
+            for(int val: A){
+                if(curr + val <= allot){
+                    curr = curr + val;
+                } else {
+                    curr = val;
+                    reqd++;
+                }
+            }
+            if(reqd > B){
+                lo = allot + 1;
+            }  else {
+                hi = allot;
+            }
+        }
+        return lo;
+    }
+}
+// https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+class Solution {
+    public int kthSmallest(int[][] matrix, int k) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int lo = matrix[0][0];
+        int hi = matrix[m - 1][n - 1];
+        while(lo < hi){
+            int mid = lo + (hi - lo) / 2;
+            int count = 0;
+            int j = n - 1;
+            for(int i = 0; i < m; i++){
+                while(j >= 0 && matrix[i][j] > mid){
+                    j--;
+                }    
+                count += (j + 1);
+            }    
+            if(count < k){
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        return lo;
+    }
+}
+// https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/ 
+class Solution {
+    public int findKthNumber(int m, int n, int k) {
+        int lo = 1;
+        int hi = m * n;
+        
+        while(lo < hi){
+            int mid = lo + (hi - lo) / 2;
+            
+            int count = 0;
+            int j = n;
+            for(int i = 1; i <= m; i++){
+                while(j >= 1 && i * j > mid){
+                    j--;
+                }
+                
+                count += j;
+            }
+            
+            if(count < k){
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        
+        return lo;
+    }
+}
+// https://leetcode.com/problems/find-k-th-smallest-pair-distance
+class Solution {
+    public int smallestDistancePair(int[] nums, int k) {
+        Arrays.sort(nums);
+        
+        int lo = 0;
+        for(int i = 0; i < nums.length - 1; i++){
+            lo = Math.min(lo, nums[i + 1] - nums[i]);
+        }
+        
+        int hi = nums[nums.length - 1] - nums[0];
+        while(lo < hi){
+            int mid = (lo + hi) / 2;
+            
+            int count = 0;
+            
+            int j = 0;
+            for(int i = 0; i < nums.length; i++){
+                while(j < nums.length && nums[j] - nums[i] <= mid){
+                    j++;
+                }
+                
+                count += (j - i - 1);
+            }
+            
+            if(count < k){
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+        
+        return lo;
+    }
+}
+// https://leetcode.com/problems/k-th-smallest-prime-fraction/
+class Solution {
+    public int[] kthSmallestPrimeFraction(int[] arr, int k) {
+        double lo = 0.0;
+        double hi = 1.0;
+        
+        while(lo < hi){
+            double mid = (lo + hi) / 2;
+            int p = 0;
+            int q = 1;
+            int count = 0;
+            int j = 0;
+            for(int i = 0; i < arr.length; i++){
+                while(j < arr.length && arr[i] * 1.0 / arr[j] > mid){
+                    j++;
+                }
+                if(j == arr.length){
+                    break;
+                }
+                count += (arr.length - j);   
+                if(p * arr[j] < q * arr[i]){
+                    p = arr[i];
+                    q = arr[j];
+                }
+            }
+            if(count < k){
+                lo = mid;
+            } else if(count > k){
+                hi = mid;
+            } else {
+                return new int[]{p, q};
+            }
+        }
+        return null;
+    }
+}
+// https://leetcode.com/problems/search-in-rotated-sorted-array/
+// 33. Search in Rotated Sorted Array
+class Solution {
+    public int search(int[] nums, int target) {
+        int i = search(nums, 0, nums.length - 1, target);
+        return i;
+    }
+     int search(int arr[], int l, int h, int key)
+    {
+        if (l > h)
+            return -1;
+        int mid = (l + h) / 2;
+        if (arr[mid] == key)
+            return mid;
+        if (arr[l] <= arr[mid]) {
+            if (key >= arr[l] && key <= arr[mid])
+                return search(arr, l, mid - 1, key);
+            return search(arr, mid + 1, h, key);
+        }
+        if (key >= arr[mid] && key <= arr[h])
+            return search(arr, mid + 1, h, key);
+        return search(arr, l, mid - 1, key);
+    }
+}
