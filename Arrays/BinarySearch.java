@@ -340,3 +340,4 @@ class Solution {
         return search(arr, l, mid - 1, key);
     }
 }
+print(data);

@@ -439,9 +439,7 @@ public class Main {
             //you can also replace it with inorder successor
             root.val = findIOS(root.right);
             root.right = deleteNode(root.right,root.val);
-        }
-        
-        
+        }   
         return root;
     }
     public int findIOS(TreeNode node){
