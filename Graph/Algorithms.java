@@ -239,7 +239,7 @@ public static void kruskals(ArrayList<Edge>[] graph){
       int nbrLead = find(e.nbr);
       
       if(srcLead != nbrLead){
-         union(srcLead, nbrLead);
+        union(srcLead, nbrLead);
       }
    }
 }
