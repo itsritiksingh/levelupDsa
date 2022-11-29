@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/minimum-moves-to-equal-array-elements/
+// In one move, you can increment n - 1 elements of the array by 1.
 // 453. Minimum Moves to Equal Array Elements
 class Solution {
     public int minMoves(int[] nums) {
@@ -15,7 +16,7 @@ class Solution {
 }
 // https://practice.geeksforgeeks.org/problems/digit-multiplier3000/1
 // Given a positive integer N, find the smallest number S such that the product of all the digits of S is equal to the number N. If there's no such number, Print "-1".
-//100 -> 455
+// for N = 100 ans = 455
 class Solution {
     static String getSmallest(Long N) {
         StringBuilder sb = new StringBuilder();

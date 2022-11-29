@@ -144,3 +144,141 @@ class Solution {
     
     int[] vis;
 }
+
+// https://leetcode.com/problems/path-with-maximum-gold/description/
+// 1219 path with maximum gold
+class Solution {
+    int ans , gold;
+    public int getMaximumGold(int[][] grid) {
+        ans = gold = 0;
+        boolean [][] vis = new boolean[grid.length][grid[0].length];
+        
+        int[][] dir = {{0,-1},{0,1},{1,0},{-1,0}};
+        
+        for(int i = 0;i < grid.length;i++){
+            for(int j = 0;j < grid[0].length;j++){
+                dfs(grid,vis,i,j,dir);
+            }
+        }
+        
+        return ans;
+    }
+    private void dfs(int[][] grid,boolean[][] vis, int i, int j,int [][]dir){
+        if(i < 0 || j <0 || i >= grid.length || j >= grid[0].length) return;
+        
+        if(vis[i][j] || grid[i][j] == 0) return;
+        
+        vis[i][j] = true;
+        gold += grid[i][j];
+        ans = Math.max(ans,gold);
+        
+        for(int[] d : dir){
+            int er = i + d[0];
+            int ec = j + d[1];
+            
+            dfs(grid,vis,er,ec,dir);
+        }
+        
+        vis[i][j] = false;
+        gold -= grid[i][j];
+    }
+}
+
+// https://leetcode.com/problems/number-of-provinces/description/
+// 547. Number of Provinces
+class Solution {
+    public int findCircleNum(int[][] isConnected) {
+        HashMap<Integer, ArrayList<Integer>> graph = new HashMap();
+        int n = isConnected[0].length;
+        for(int i = 0;i < n;i++){
+            graph.put(i,new ArrayList());
+        }
+        for(int  i =0;i < n;i++){
+            for(int j = 0;j < n;j++){
+                if(isConnected[i][j] == 1)
+                    graph.get(i).add(j);
+            }
+        }
+        
+        int count = 0;
+        boolean[] vis = new boolean[n];
+        for(int i= 0;i < n;i++){
+            if(!vis[i]){
+                count++;
+                dfs(graph,vis,i);
+            }
+        }
+        
+        return count;
+    }
+    
+    private void dfs(HashMap<Integer, ArrayList<Integer>> graph, boolean[] vis, int u){
+        if(vis[u]) return;
+        else vis[u] = true;
+        
+        for(int v : graph.get(u)){
+            if(!vis[v]) dfs(graph,vis,v);
+        }
+    }
+}
+
+// https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital/description/
+// 2477. Minimum Fuel Cost to Report to the Capital
+class Solution {
+    long ans = 0; int s;
+    public long minimumFuelCost(int[][] roads, int seats) {
+        List<List<Integer>> graph = new ArrayList(); s = seats;
+        for (int i = 0; i < roads.length + 1; i++) graph.add(new ArrayList());
+        for (int[] r: roads) {
+            graph.get(r[0]).add(r[1]);
+            graph.get(r[1]).add(r[0]);
+        }
+        dfs(0, 0, graph);
+        return ans;
+    }
+    private int dfs(int i, int prev, List<List<Integer>> graph) {
+        int people = 1;
+        for (int x: graph.get(i)) {
+            if (x == prev) continue;
+            people += dfs(x, i, graph);
+        }
+        if (i != 0) ans += (people + s - 1) / s;
+        return people;
+    }
+    }
+// https://leetcode.com/problems/word-search/
+// 79. Word Search
+class Solution {
+    public boolean exist(char[][] board, String word) {
+        // char[] chArr= word.toCharArray();
+        for(int i = 0;i < board.length;i++){
+            for(int j = 0;j < board[0].length;j++){
+                if(word.charAt(0) == board[i][j]){
+                    boolean [][]vis = new boolean[board.length][board[0].length];
+                        if(dfs(board,word,i,j,0,vis)){
+                        return true;
+                        }
+                }
+            }
+        }
+
+        return false;
+    }
+    private boolean dfs(char[][] board,String word,int i,int j,int idx, boolean[][]vis){
+        if(idx == word.length()) return true;
+        if(i < 0 || i >= board.length || j < 0 || j >= board[0].length) return false;
+
+        if(board[i][j] == word.charAt(idx)){ 
+            idx++;
+        }else return false;
+
+        if(vis[i][j]) return false;
+        
+        vis[i][j] = true;
+
+        if(dfs(board,word,i-1,j,idx,vis) || dfs(board,word,i+1,j,idx,vis) || dfs(board,word,i,j+1,idx,vis) || dfs(board,word,i,j-1,idx,vis)) return true;
+
+        vis[i][j] = false;
+        return false;
+    }
+}

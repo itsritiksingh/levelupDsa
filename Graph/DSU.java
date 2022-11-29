@@ -28,6 +28,10 @@ class Solution {
     }
 }
 
+// 547. Number of Provinces
+// https://leetcode.com/problems/number-of-provinces/submissions/749761926/
+
+
 // https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/sentence_similarity_official/ojquestion
 // Sentence Similarity
 public class Main {

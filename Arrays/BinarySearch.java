@@ -230,11 +230,9 @@ class Solution {
             for(int i = 1; i <= m; i++){
                 while(j >= 1 && i * j > mid){
                     j--;
-                }
-                
+                }  
                 count += j;
             }
-            
             if(count < k){
                 lo = mid + 1;
             } else {
@@ -340,4 +338,63 @@ class Solution {
         return search(arr, l, mid - 1, key);
     }
 }
-print(data);
+
+// https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+// 4. Median of Two Sorted Arrays
+public double findMedianSortedArrays(int[] x, int[] y) {
+    if(x.length>y.length){
+        return findMedianSortedArrays(y,x);
+    }
+    int i=0;
+    int j=x.length;
+    
+    while(i<=j){
+        int px=(i+j)/2;
+        int py=(x.length+y.length+1)/2-px;
+        
+        int maxLeftX;
+        int maxLeftY;
+        int minRightX;
+        int minRightY;
+        
+        if(px==0){
+            maxLeftX=Integer.MIN_VALUE;
+        }else{
+            maxLeftX=x[px-1];
+        }
+        
+        if(py==0){
+            maxLeftY=Integer.MIN_VALUE;
+        }else{
+            maxLeftY=y[py-1];
+        }
+        
+        if(px==x.length){
+            minRightX=Integer.MAX_VALUE;
+        }else{
+            minRightX=x[px];
+        }
+        
+        if(py==y.length){
+            minRightY=Integer.MAX_VALUE;
+        }else{
+            minRightY=y[py];
+        }
+        
+        if(maxLeftX <= minRightY && maxLeftY <= minRightX){
+            if((x.length+y.length)%2==0){
+                double ans=(1.0*Math.max(maxLeftX,maxLeftY)+Math.min(minRightX,minRightY))/2;
+               
+                return ans;
+            }else{
+                double ans=Math.max(maxLeftX,maxLeftY);
+                return ans;
+            }
+        }else if(maxLeftX>minRightY){
+            j=px-1;
+        }else{
+            i=px+1;
+        }
+    }
+    return 0.0;
+}

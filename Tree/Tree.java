@@ -206,7 +206,7 @@ public class Main {
     static ArrayList<Integer> topView(Node root)
     {
         ArrayList<Integer> retVal = new ArrayList<>();
-        HashMap<Integer,Node> map = new HashMap<>();
+        HashMap<Integer,Node> ;map = new HashMap<>();
         
         int lv = 0, rv = 0;
         
