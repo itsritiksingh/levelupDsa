@@ -80,6 +80,7 @@ public class Solution {
 }
 // https://leetcode.com/problems/perfect-squares/description/
 // 279. Perfect Squares
+// for n = 12 => 0 1 2 3 1 2 3 4 2 1 2 3 3 
 class Solution {
     public int numSquares(int n) {
         int[] dp = new int[n+1];
@@ -126,5 +127,45 @@ class Solution {
             count[c-'0']++;
         }
         return count;
+    }
+}
+// https://leetcode.com/problems/2-keys-keyboard/
+// 650. 2 Keys Keyboard
+class Solution {
+    public int minSteps(int n) {
+        int ans = 0, d = 2;
+        while (n > 1) {
+            while (n % d == 0) {
+                ans += d;
+                n /= d;
+            }
+            d++;
+        }
+        return ans;
+    }
+}
+// https://leetcode.com/problems/minimum-falling-path-sum/
+// 931. Minimum Falling Path Sum
+class Solution {
+    public int minFallingPathSum(int[][] matrix) {
+       int dp[][] = new int[matrix.length][matrix.length];
+       int dir[][] = new int[][]{{1,-1},{1,0},{1,1}};
+       int max = (int)1e9;
+       for(int i = 0;i < matrix.length; i++){
+           max = Math.min(find(0,i,dir,matrix,dp),max);
+       } 
+       return max;
+    }
+    private int find(int i,int j,int [][]dir,int[][] matrix,int[][] dp){
+        if(i >= matrix.length) return 0;
+        if(dp[i][j] != 0) return dp[i][j];
+        int max = (int)1e9;
+        for(int[] d: dir){
+            int c = j + d[1];
+            if(c >= 0 && c < matrix.length)
+                max = Math.min(find(i+1,c,dir,matrix,dp),max);
+        }
+
+        return dp[i][j] = max + matrix[i][j];
     }
 }
