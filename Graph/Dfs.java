@@ -43,6 +43,49 @@ class Solution {
     }
 }
 
+// https://leetcode.com/problems/cracking-the-safe/
+// 753. Cracking the Safe
+class Solution {
+    public String crackSafe(int n, int k) {
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < n; i++){
+            sb.append(0);
+        }
+        
+        HashSet<String> vis = new HashSet<>();
+        vis.add(sb.toString());
+        
+        int lim = (int)Math.pow(k, n);
+        dfs(sb, vis, lim, n, k);
+        
+        return sb.toString();
+    }
+    
+    public boolean dfs(StringBuilder sb, HashSet<String> vis, int lim, int n, int k){
+        if(vis.size() == lim){
+            return true;
+        }
+        
+        String lnm1 = sb.substring(sb.length() - (n - 1));
+        for(int i = 0; i < k; i++){
+            String npwd = lnm1 + i;
+            if(!vis.contains(npwd)){
+                vis.add(npwd);
+                sb.append(i);
+                boolean flag = dfs(sb, vis, lim, n, k);
+                if(flag){
+                    return true;
+                }
+                
+                vis.remove(npwd);
+                sb.deleteCharAt(sb.length() - 1);
+            }
+        }
+        
+        return false;
+    }
+}
+
 // https://leetcode.com/problems/coloring-a-border/
 // 1034. Coloring A Border
 class Solution {
@@ -280,5 +323,30 @@ class Solution {
 
         vis[i][j] = false;
         return false;
+    }
+}
+
+// https://leetcode.com/problems/all-paths-from-source-to-target/description/
+// 797. All Paths From Source to Target
+class Solution {
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        List<Integer> ans = new ArrayList();
+        List<List<Integer>> ret = new ArrayList();
+
+        dfs(0,graph,ret,ans);
+        return ret;
+    }
+    public void dfs(int src, int[][] graph , List<List<Integer>> ret,List<Integer> ans){
+        if(src == graph.length - 1){
+            ans.add(src);
+            List<Integer> temp = new ArrayList(ans);
+            ret.add(temp);
+            ans.remove(ans.size() - 1); 
+        }
+        ans.add(src);
+        for(int nbr : graph[src]){
+            dfs(nbr,graph,ret,ans);     
+        }
+        ans.remove(ans.size() - 1); 
     }
 }

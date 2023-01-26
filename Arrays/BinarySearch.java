@@ -7,7 +7,7 @@ class Solution {
         while(lo < hi){
             int mid = (lo + hi) / 2;
             if(nums[mid] < nums[hi]){
-                hi = mid - 1;
+                hi = mid;
             } else {
                 lo = mid + 1;
             }

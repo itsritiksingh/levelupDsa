@@ -127,3 +127,27 @@ public class Solution {
         return maxans;
     }
 }
+
+// https://leetcode.com/problems/simplify-path/description/
+// 71. Simplify Path
+class Solution {
+    public String simplifyPath(String path) {
+        Stack<String> st = new Stack();
+        String[] strarr = path.split("/");
+        for(String s: strarr){
+            //s.equals(" ") not working
+            if(s.trim().isEmpty()) continue;
+            else if(s.equals(".")) continue;
+            else if(s.equals("..")) {if(st.size() > 0) st.pop();}
+            else st.push(s);
+        }
+        StringBuilder sol = new StringBuilder();
+        while(st.size() > 0){
+            sol.insert(0,st.pop());
+            sol.insert(0,"/");
+        }
+
+        if(sol.length() == 0) sol.append('/');
+        return sol.toString();
+    }
+}

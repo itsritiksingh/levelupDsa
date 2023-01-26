@@ -105,7 +105,8 @@ public class l001 {
         return res;
     }
 
-    // 143
+    // 143 https://leetcode.com/problems/reorder-list/
+    // reorder list
     public void reorderList(ListNode head) {
         if (head == null && head.next == null)
             return;

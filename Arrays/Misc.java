@@ -57,24 +57,6 @@ class Solution {
         }
         return res + 1;
     }
-} 
-// 795. Number of Subarrays with Bounded Maximum
-// https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
-class Solution {
-    public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-        int s = -1;
-        int e = -1;
-        int res = 0;
-        for(int i = 0; i < nums.length; i++){
-            if(nums[i] >= left && nums[i] <= right){
-                e = i;
-            } else if(nums[i] > right){
-                e = s = i;
-            } 
-            res += e - s;
-        }
-        return res;
-    }
 }
 
 // https://leetcode.com/problems/majority-element-ii/description/

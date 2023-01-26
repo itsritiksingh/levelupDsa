@@ -169,3 +169,69 @@ class Solution {
         return dp[i][j] = max + matrix[i][j];
     }
 }
+
+// https://leetcode.com/problems/word-break/description/
+// 139. Word Break
+public class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        return wordBreakMemo(s, new HashSet<>(wordDict), 0, new Boolean[s.length()]);
+    }
+    private boolean wordBreakMemo(String s, Set<String> wordDict, int start, Boolean[] memo) {
+        if (start == s.length()) {
+            return true;
+        }
+        if (memo[start] != null) {
+            return memo[start];
+        }
+        for (int end = start + 1; end <= s.length(); end++) {
+            if (wordDict.contains(s.substring(start, end)) && wordBreakMemo(s, wordDict, end, memo)) {
+                return memo[start] = true;
+            }
+        }
+        return memo[start] = false;
+    }
+}
+// https://leetcode.com/problems/word-break-ii/description/
+// 140. Word Break II
+
+class Solution {
+    List<String> ret;
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        ret = new ArrayList();
+        HashSet<String> set = new HashSet(wordDict);
+        findSentence(s,"",set);
+        return ret;
+    }
+    private void findSentence(String s,String ans, HashSet<String> set){
+        if(s.length() == 0) {
+            ret.add(ans.trim());
+            return;
+        }
+        for(int i = 0;i < s.length();i++){
+            String left = s.substring(0,i+1);
+            if(set.contains(left)){
+                String right = s.substring(i+1,s.length());
+                findSentence(right,ans + left+ " ",set);
+            }
+        }
+
+        return;
+    }
+}
+
+// https://leetcode.com/problems/domino-and-tromino-tiling/description/
+// 790. Domino and Tromino Tiling
+class Solution {
+    // 1,1,2,5,11,24
+    private static final int MOD = 1000000007;
+    public int numTilings(int N) {
+        if (N == 1) return 1;
+        if (N == 2) return 2;
+        long[] dp = new long[N + 1];
+        dp[0] = 1; dp[1] = 1; dp[2] = 2;
+        for (int i = 3; i <= N; i++) {
+            dp[i] = (dp[i - 1] * 2 + dp[i - 3]) % MOD;
+        }
+        return (int) dp[N];
+    }
+}
