@@ -35,3 +35,32 @@ class Solution {
         return sb.reverse().toString();
     }
 };
+
+// https://leetcode.com/problems/permutation-sequence/description/
+// 60. Permutation Sequence
+class Solution {
+    public String getPermutation(int n, int k) {
+        int fact = 1;
+        List<Integer> numbers = new ArrayList();
+        for(int i = 1;i < n;i++){
+            fact *= i;
+            numbers.add(i);
+        }
+        numbers.add(n);
+        StringBuilder ans = new StringBuilder();
+        k = k- 1;
+        while(true){
+            ans.append(numbers.get(k/ fact));
+            //to remove it takes O(n) total TC would be O(n*n)
+            numbers.remove(k/fact);
+            if(numbers.size() == 0){
+                break;
+            }
+
+            k = k % fact;
+            fact = fact / numbers.size();
+        }
+
+        return ans.toString();
+    }
+}

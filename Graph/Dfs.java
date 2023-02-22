@@ -67,11 +67,12 @@ class Solution {
         }
         
         String lnm1 = sb.substring(sb.length() - (n - 1));
-        for(int i = 0; i < k; i++){
+        for(int i = 0; i < k; i++){ 
             String npwd = lnm1 + i;
             if(!vis.contains(npwd)){
                 vis.add(npwd);
                 sb.append(i);
+                
                 boolean flag = dfs(sb, vis, lim, n, k);
                 if(flag){
                     return true;
