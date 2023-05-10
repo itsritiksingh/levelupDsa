@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 // 28. Find the Index of the First Occurrence in a String
+// refer this image: https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200520123449/KMP-Algorithm-Page-1.png
 class Solution {
     public int strStr(String txt, String pat) {
         int[] lps = getLPS(pat);

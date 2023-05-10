@@ -1,9 +1,9 @@
-Nimport java.util.*;
+import java.util.*;
 
 public class l003_lis {
 
     private static int LIS_rec(int[] arr, int idx, int[] dp) {
-        if (dp[idx] != 0)ispla
+        if (dp[idx] != 0)
             return dp[idx];
  
         int maxLen = 1;

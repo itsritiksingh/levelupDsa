@@ -270,7 +270,7 @@ class Solution
         int count = 0;
         int profit = 0;
         
-        for(Job j: arr){
+        for(Job j: arr){    
             int empty = find(j.deadline);
             if(empty > 0){
                 count++;

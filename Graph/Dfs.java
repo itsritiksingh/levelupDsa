@@ -351,3 +351,64 @@ class Solution {
         ans.remove(ans.size() - 1); 
     }
 }
+
+// 2360. Longest Cycle in a Graph
+// https://leetcode.com/problems/longest-cycle-in-a-graph/description/
+class Solution {
+    private int res;
+    private void dfs(int u, int[] edges, boolean[] visited, boolean[] inRecursion, int[] count) {
+        if(u != -1) {
+            visited[u] = inRecursion[u] = true;
+            int v = edges[u];
+            if(v != -1 && !visited[v]) {
+                count[v] = count[u] + 1;
+                dfs(v, edges, visited, inRecursion, count);
+            }
+            else if(v != -1 && inRecursion[v]) { 
+                res = Math.max(res, count[u]-count[v]+ 1);
+            }
+            inRecursion[u] = false;   
+        }
+    }
+    
+    public int longestCycle(int[] edges) {
+        int n = edges.length;
+        this.res = -1;
+        boolean visited[] = new boolean[n];
+        boolean inRecursion[] = new boolean[n];
+        int count[] = new int[n];
+        Arrays.fill(count, 1);
+        
+        for(int i=0; i<n; i++) {
+            if(!visited[i]) {
+                dfs(i, edges, visited, inRecursion, count);
+            }
+        }
+        
+        return res;
+    }
+}
+// 1372. Longest ZigZag Path in a Binary Tree
+// https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/
+class Solution {
+    int pathLength = 0;
+    private void dfs(TreeNode node, boolean goLeft, int steps) {
+        if (node == null) {
+            return;
+        }
+        pathLength = Math.max(pathLength, steps);
+        if (goLeft) {
+            dfs(node.left, false, steps + 1);
+            dfs(node.right, true, 1);
+        } else {
+            dfs(node.left, false, 1);
+            dfs(node.right, true, steps + 1);
+        }
+    }
+
+    public int longestZigZag(TreeNode root) {
+        dfs(root, false, 0);
+        dfs(root, true, 0);
+        return pathLength;
+    }
+}

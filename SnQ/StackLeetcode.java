@@ -32,7 +32,7 @@ class Solution {
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
         Stack<Integer> st = new Stack();
-          boolean flag = true;
+        boolean flag = true;
         for(int i = nums.length -1;i>=0;i--)
         {
             int temp = nums[i];
@@ -149,5 +149,68 @@ class Solution {
 
         if(sol.length() == 0) sol.append('/');
         return sol.toString();
+    }
+}
+
+// 1673. Find the Most Competitive Subsequence
+// https://leetcode.com/problems/find-the-most-competitive-subsequence/
+class Solution {
+    public int[] mostCompetitive(int[] nums, int k) {
+        Stack<Integer> stack = new Stack<>();
+        int[] result = new int[k];
+        for (int i = 0; i < nums.length; i++) {
+            while (!stack.empty() && nums[i] < nums[stack.peek()] && nums.length - i + stack.size() > k) {
+                stack.pop();
+            }
+            if (stack.size() < k) {
+                stack.push(i);
+            }
+        }
+        for (int i = k - 1; i >= 0; i--) {
+            result[i] = nums[stack.pop()];
+        }
+        return result;
+    }
+}
+
+// 155. Min Stack
+// https://leetcode.com/problems/min-stack/
+
+
+// https://leetcode.com/problems/asteroid-collision/
+// 735. Asteroid Collision
+class Solution {
+    public int[] asteroidCollision(int[] asteroids) {
+        Stack<Integer> st = new Stack();
+        for(int d: asteroids){
+            if(d > 0) st.push(d);
+            else {
+                // d < 0
+                if(st.empty() || st.peek() < 0) st.push(d);
+                else {
+                    int temp = st.pop();
+                    while(temp > 0 && (temp < Math.abs(d) && !st.empty())){
+                        temp = st.pop();
+                    }
+
+                    if(temp < 0){
+                        st.push(temp); st.push(d);
+                    } 
+                    //temp > 0 and d == temp
+                    else if(temp == Math.abs(d)) continue;
+                    // temp > 0 and temp < abs(d)
+                    else if(temp < Math.abs(d) && st.empty()) st.push(d);
+                    // temp > 0 and temp > abs(d)
+                    else st.push(temp);
+                }
+            }
+        }
+
+        int[] ans = new int[st.size()];
+        int idx = ans.length-1;
+        while(idx >= 0){
+            ans[idx--] = st.pop();
+        }
+        return ans;
     }
 }

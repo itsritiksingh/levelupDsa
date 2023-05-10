@@ -9,7 +9,7 @@ public class l001_twoPointer {
      * 7. Optimization
      */
 
-    public static void display(int[] dp) {
+    public static void display(int[] dp)     {
         for (int ele : dp)
             System.out.print(ele + " ");
         System.out.println();
