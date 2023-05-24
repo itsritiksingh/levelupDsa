@@ -342,3 +342,20 @@ class Solution
         }
         return dist;
     }
+
+
+// 1498. Number of Subsequences That Satisfy the Given Sum Condition
+// https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description/
+class Solution {
+    public int numSubseq(int[] A, int target) {
+    Arrays.sort(A);
+    int res = 0, n = A.length, l = 0, r = n - 1, mod = (int)1e9 + 7,pows[] = new int[n];
+    pows[0] = 1;
+    for (int i = 1 ; i < n ; ++i) pows[i] = pows[i - 1] * 2 % mod;
+    while (l <= r) {
+        if (A[l] + A[r] > target) r--;
+        else res = (res + pows[r - l++]) % mod;
+        // System.out.println(l);
+    } return res;
+}
+}

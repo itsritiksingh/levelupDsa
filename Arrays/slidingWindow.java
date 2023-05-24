@@ -201,7 +201,7 @@ class Solution {
 class Solution {
     public String longestDupSubstring(String S) {
         String ans = "";
-        
+
         int left = 1;
         int right = S.length()-1;
         
@@ -259,5 +259,83 @@ class Solution {
     
     private long nextHash(long pow,long hash,char left,char right){
         return (hash - (left - 'a' + 1) * pow) * 31 + (right - 'a' + 1);
+    }
+}
+// https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
+// 2024. Maximize the Confusion of an Exam
+
+class Solution {
+    public int maxConsecutiveAnswers(String answerKey, int k) {
+        int tc =0,fc = 0, ans = 0,start = 0;
+        for(int i = 0;i < answerKey.length();i++){
+                if(answerKey.charAt(i) == 'T') tc++;
+                else fc++;
+
+                if(Math.min(tc,fc) > k) {
+                    while(Math.min(tc,fc) > k){
+                        if(answerKey.charAt(start) == 'T') tc--;
+                        else fc--;
+                        start++;
+                    }
+                }
+            ans = Math.max(ans,i-start+1);
+        }
+        return ans;
+    }
+}
+
+// https://leetcode.com/problems/minimum-additions-to-make-valid-string/
+// 2645. Minimum Additions to Make Valid String
+
+class Solution {
+    public int addMinimum(String word) {
+        char prev = 'z';
+        int k = 0;
+        for(int i = 0;i < word.length();i++){
+            k += word.charAt(i) <= prev ? 1 : 0;
+            prev = word.charAt(i);
+        }
+
+        return k*3-word.length();
+    }
+}
+
+// based on prefix sum
+// https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/
+// 1671. Minimum Number of Removals to Make Mountain Array
+
+class Solution {
+    public int minimumMountainRemovals(int[] nums) {
+        int n = nums.length;
+        int[] dp = new int[n];
+        int l = 0, r = 0;
+        for(int i = 0;i < n;i++){
+            dp[i] = 1;
+            for(int j = i-1;j >=0 ;j--){
+                if(nums[j] < nums[i]){
+                    dp[i] = Math.max(dp[j]+1,dp[i]);
+                    l = Math.max(l,dp[i]);
+                }
+            }
+        }
+        int rdp[] = new int[n];
+        for(int i = n-1;i >= 0;i--){
+            rdp[i] = 1;
+            for(int j = i+1;j < n ;j++){
+                if(nums[j] < nums[i]){
+                    rdp[i] = Math.max(rdp[j]+1,rdp[i]);
+                    r = Math.max(r,rdp[i]);
+                }
+            }
+        }
+
+        int maxLen = 0;
+        for(int i = 0;i < n;i++){
+            if(dp[i] >= 2 && rdp[i] >= 2){
+            maxLen = Math.max(maxLen,dp[i]+rdp[i]-1);
+            }
+        }
+
+        return n - maxLen;
     }
 }

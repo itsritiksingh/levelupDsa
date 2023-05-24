@@ -154,3 +154,31 @@ public class l003_Problems {
     }
 
 }
+
+// 1458. Max Dot Product of Two Subsequences
+// https://leetcode.com/problems/max-dot-product-of-two-subsequences/
+
+class Solution {
+    int maxAns;
+    public int maxDotProduct(int[] nums1, int[] nums2) {
+        int dp[][] = new int[nums1.length+1][nums2.length+1];
+        maxAns = 0;
+        return longestSubsequence(nums1.length,nums2.length,nums1,nums2,dp);
+    }
+    
+    private int longestSubsequence(int n,int m,int[] nums1,int[] nums2,int[][] dp){
+        if(n == 0 || m == 0) return -1001;
+        if(dp[n][m] != 0) return dp[n][m];
+        
+        int a = longestSubsequence(n-1,m-1,nums1,nums2,dp);
+        int b = longestSubsequence(n-1,m,nums1,nums2,dp);
+        int c = longestSubsequence(n,m-1,nums1,nums2,dp);
+
+        dp[n][m] = nums1[n-1] * nums2[m-1];
+        dp[n][m] += Math.max(a,0);
+        dp[n][m] = Math.max(b,dp[n][m]);
+        dp[n][m] = Math.max(c,dp[n][m]);
+
+        return dp[n][m];
+    }
+}
