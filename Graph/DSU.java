@@ -28,9 +28,7 @@ class Solution {
     }
 }
 
-// 547. Number of Provinces
-// https://leetcode.com/problems/number-of-provinces/submissions/749761926/
-
+// https://leetcode.com/problems/number-of-provinces/submissions/959805570/
 
 // https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/sentence_similarity_official/ojquestion
 // Sentence Similarity
@@ -490,6 +488,56 @@ class Solution {
     }
 }
 
+
+// https://leetcode.com/problems/largest-component-size-by-common-factor/description/
+// Largest Component Size by Common Factor
+class DSU {
+    ArrayList<Integer> parent = new ArrayList();
+    public DSU (int n) {
+        for (int i = 0; i < n; i++)
+            parent.add(i);
+    }
+    int findParent(int n) {
+        if(parent.get(n) == n)
+            return n;
+        parent.set(n, findParent(parent.get(n)));
+        return parent.get(n);
+    }
+    void union(int u, int v) {
+        int uParent = findParent(u);
+        int vParent = findParent(v);
+        
+        if(uParent != vParent)
+            parent.set(uParent, parent.get(vParent));
+    }
+}
+class Solution {
+    public int largestComponentSize(int[] nums) {
+        int n = nums.length;
+        int x = nums[0];
+        for (int num : nums)
+            x = Math.max(x, num);
+        DSU dsu = new DSU(x + 1);
+        
+        for (int num : nums) {
+            for (int i = 2; i * i <= num; i++) {
+                if (num % i == 0) {
+                    dsu.union(num, i);
+                    dsu.union(num, num/i);
+                }
+            }
+        }
+        Map<Integer, Integer> map = new HashMap();
+        int ans = 1;
+        for (int num : nums) {
+            int par = dsu.findParent(num);
+            map.put(par, map.getOrDefault(par, 0) + 1);
+            ans = Math.max(ans, map.get(par));
+        }
+        return ans;
+    }
+}
+
 // 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree
 // https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
 class Solution {
@@ -622,5 +670,311 @@ class Solution {
         res.add(critical);
         res.add(pcritical);
         return res;
+    }
+}
+
+// 765. Couples Holding Hands
+// https://leetcode.com/problems/couples-holding-hands/
+class Solution {
+    public int minSwapsCouples(int[] row) {
+        parent = new int[row.length];
+        rank = new int[row.length];
+            
+        for(int i = 0;i < row.length; i+=2){
+            parent[i] = parent[i + 1] = i;
+            rank[i] = rank[i + 1] = 1;
+        }
+        
+        int count = 0;
+        for(int i = 0;i < row.length - 1;i+=2){
+            int il = find(row[i]);
+            int jl = find(row[i + 1]);
+            
+            if(il != jl){
+                union(il,jl);
+                count++;
+            }
+        }
+        
+        return count;
+    }
+    int []parent;
+    int[] rank;
+    public int find(int i){
+        if(parent[i] == i) return i;
+        else {
+            parent[i] = find(parent[i]);
+            return parent[i];
+        }
+    }
+    public void union(int i,int j){
+        if(rank[i] < rank[j]){
+            parent[j] = i;
+        }else if(rank[i] > rank[j]){
+            parent[i] = j;
+        }else{
+            rank[i]++;
+            parent[i] = j;
+        }
+    }
+}
+
+// 803. Bricks Falling When Hit
+
+class Solution {
+    int m;
+    int n;
+    
+    public int[] hitBricks(int[][] grid, int[][] hits) {
+        m = grid.length;
+        n = grid[0].length;
+        
+        parent = new int[m * n + 1];
+        rank = new int[m * n + 1];
+        size = new int[m * n + 1];
+        for(int i = 0; i < parent.length; i++){
+            parent[i] = i;
+            size[i] = 1;
+            rank[i] = 0;
+        }
+        
+        for(int[] hit: hits){
+            int x = hit[0];
+            int y = hit[1];
+            
+            if(grid[x][y] == 1){    
+                grid[x][y] = 2;
+            }
+        }
+        
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                if(grid[i][j] == 1){
+                    handleUnionOfAllNbrs(grid, i, j);
+                }
+            }
+        }
+        
+        int[] res = new int[hits.length];
+        
+        for(int i = hits.length - 1; i >= 0; i--){
+            int x = hits[i][0];
+            int y = hits[i][1];
+            
+            if(grid[x][y] == 2){
+                int bricksIn0 = size[find(0)];
+                grid[x][y] = 1;
+                handleUnionOfAllNbrs(grid, x, y);
+                int newBricksIn0 = size[find(0)];
+                
+                if(newBricksIn0 > bricksIn0){
+                  res[i] =  newBricksIn0 - bricksIn0 - 1; 
+                } 
+            }
+        }
+        
+        return res;
+    }
+    
+    int[][] dirs = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
+    void handleUnionOfAllNbrs(int[][] grid, int i, int j){
+        int bno = i * n + j + 1;
+        
+        for(int[] dir: dirs){
+            int ni = i + dir[0];
+            int nj = j + dir[1];
+            
+            if(ni >= 0 && ni < m && nj >= 0 && nj < n && grid[ni][nj] == 1){
+                int nbno = ni * n + nj + 1;
+                union(bno, nbno);
+            }
+        }
+        
+        if(i == 0){
+            union(0, bno);
+        }
+    }
+       
+    int[] parent;
+    int[] rank;
+    int[] size;
+    void union(int X, int Y){
+        int x = find(X);
+        int y = find(Y);
+        if(x == y){
+            return;
+        }
+        
+        if(rank[x] < rank[y]){
+            parent[x] = y;
+            size[y] += size[x];
+        } else if(rank[y] < rank[x]){
+            parent[y] = x;
+            size[x] += size[y];
+        } else {
+            parent[y] = x;
+            size[x] += size[y];
+            rank[x]++;
+        }
+    }
+    
+    int find(int x){
+        if(parent[x] == x){
+            return parent[x];
+        } else {
+            parent[x] = find(parent[x]);
+            return parent[x];
+        }
+    }
+}
+
+// 721. Accounts Merge
+// https://leetcode.com/problems/accounts-merge/description/
+class Solution {
+    class UnionFind {
+        int[] parent;
+        int[] weight;
+        
+        public UnionFind(int num) {
+            parent = new int[num];
+            weight = new int[num];
+            
+            for(int i =  0; i < num; i++) {
+                parent[i] = i;
+                weight[i] = 1;
+            }
+        }
+        
+        public void union(int a, int  b) {
+            int rootA = root(a);
+            int rootB = root(b);
+            
+            if (rootA == rootB) {
+                return;
+            }
+            
+            if (weight[rootA] > weight[rootB]) {
+                parent[rootB] = rootA;
+                weight[rootA] += weight[rootB];
+            } else {
+                parent[rootA] = rootB;
+                weight[rootB] += weight[rootA];
+            }
+        }
+        
+        public int root(int a) {
+            if (parent[a] == a) {
+                return a;
+            }
+            
+            parent[a] = root(parent[a]);
+            return parent[a];
+        }
+    }
+
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        int size = accounts.size();
+
+        UnionFind uf = new UnionFind(size);
+
+        // prepare a hash with unique email address as key and index in accouts as value
+        HashMap<String, Integer> emailToId = new  HashMap<>();
+        for(int i = 0; i < size; i++) {
+            List<String> details = accounts.get(i);
+            for(int j = 1; j < details.size(); j++) {
+                String email = details.get(j);
+                
+				// if we have already seen this email before, merge the account  "i" with previous account
+				// else add it to hash
+                if (emailToId.containsKey(email)) {
+                    uf.union(i, emailToId.get(email));
+                } else  {
+                    emailToId.put(email, i);
+                }
+            }
+        }
+        
+        // prepare a hash with index in accounts as key and list of unique email address for that account as value
+        HashMap<Integer, List<String>> idToEmails = new HashMap<>();
+        for(String key : emailToId.keySet()) {
+            int root = uf.root(emailToId.get(key));
+            
+            if (!idToEmails.containsKey(root)) {
+                idToEmails.put(root, new ArrayList<String>());
+            }
+            
+            idToEmails.get(root).add(key);
+        }
+        
+        // collect the emails from idToEmails, sort it and add account name at index 0 to get the final list to add to final return List
+        List<List<String>> mergedDetails =  new ArrayList<>();
+        for(Integer id : idToEmails.keySet()) {
+            List<String> emails =  idToEmails.get(id);
+            Collections.sort(emails);
+            //add name
+            emails.add(0, accounts.get(id).get(0));
+            
+            mergedDetails.add(emails);
+        }
+        
+        return  mergedDetails;
+    }
+}
+
+// https://leetcode.com/problems/count-servers-that-communicate/description/
+// notable mentions : 1267. Count Servers that Communicate
+
+//https://leetcode.com/problems/making-a-large-island/description/
+// 827. Making A Large Island
+//medium version : https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/description/  
+
+class Solution {
+    int n;
+    public int largestIsland(int[][] grid) {
+        n = grid.length;
+        //see union find from above class
+        UnionFind uf = new UnionFind(n*n);
+        int[][] dirs = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
+        int max = 0;
+        for(int i = 0;i < n;i++){
+            for(int j = 0;j < n;j++){
+                if(i - 1>= 0 && grid[i][j] == 1 && grid[i-1][j] == 1){
+                    uf.union(findIndex(i-1,j), findIndex(i,j));
+                }
+
+                if(j - 1>= 0 && grid[i][j] == 1 && grid[i][j-1] == 1){
+                    uf.union(findIndex(i,j-1), findIndex(i,j));
+                }
+                if(grid[i][j] == 1)
+                max = Math.max(max ,uf.weight[uf.root(findIndex(i ,j))]);
+            }
+        }
+
+        for(int i = 0;i < n;i++){
+            for(int j = 0;j < n;j++){
+               if(grid[i][j] == 0) {
+                   HashSet<Integer> set = new HashSet();
+                   int sum = 0;
+                   for(int[] d: dirs){
+                       int er = i + d[0];
+                       int ec = j + d[1];
+                       if(er >= 0 && er < n && ec >= 0 && ec < n && grid[er][ec] == 1){
+                           int parent = uf.root(findIndex(er ,ec));
+                           if(!set.contains(parent)){
+                               sum += uf.weight[parent];
+                               set.add(parent);
+                           }
+                       }
+                   }
+                   max = Math.max(max,sum+1);
+               }
+            }
+        }
+
+        return max;
+
+    }
+    private int findIndex(int i ,int j){
+        return i*n+j;
     }
 }

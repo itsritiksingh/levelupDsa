@@ -388,6 +388,10 @@ class Solution {
         return res;
     }
 }
+
+// 547. Number of Provinces
+// https://leetcode.com/problems/number-of-provinces/submissions/844509139/
+
 // 1372. Longest ZigZag Path in a Binary Tree
 // https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/description/
 class Solution {
