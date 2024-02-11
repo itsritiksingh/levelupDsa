@@ -978,3 +978,149 @@ class Solution {
         return i*n+j;
     }
 }
+
+// https://leetcode.com/problems/redundant-connection-ii/description/
+// 685. Redundant Connection II
+
+class Solution {
+    public int[] findRedundantDirectedConnection(int[][] edges) {
+    //check double parent
+    int ans1 = -1;
+    int ans2 = -1;
+    int [] inDegree = new int[edges.length+1];
+    Arrays.fill(inDegree,-1);
+    
+    for( int i = 0 ; i < edges.length; i++ ){
+        int var1 = edges[i][0];
+        int var2 = edges[i][1];
+        if( inDegree[var2] == -1 ) inDegree[var2] = i;
+        else {
+            ans1 = inDegree[var2];
+            ans2 = i;    //store the double parent
+        }
+    }
+    
+    // their will be only three categories:
+    // two parent
+    // cyclic graph
+    // two parent + cyclic
+    // ex: https://youtu.be/d0tqBMRZ6UQ?t=1022
+
+    //(u,v)  u is parent  u points to v
+    UnionFind uf = new UnionFind(edges.length*2);
+    for(int [] edge: edges){
+        if(ans2!=-1 && edge == edges[ans2]) continue;
+        int u = edge[0];
+        int v = edge[1];
+        int paru = uf.find(u);
+        int parv = uf.find(v);
+        //in case of cyclic graph ans1 will be -1
+        if(paru == parv)return ans1==-1 ? edge: edges[ans1];
+        uf.union(u,v);
+    }
+    return edges[ans2];
+}
+}
+
+// https://leetcode.com/problems/rank-transform-of-a-matrix/description/
+// 1632. Rank Transform of a Matrix
+
+// from solution
+// https://leetcode.com/problems/rank-transform-of-a-matrix/solutions/1703698/java-clean-and-detailed-solution-with-handwritten-explanation/
+class Solution {
+	public class Pair implements Comparable<Pair>{
+		int ele;
+		int r;
+		int c;
+		
+		public Pair(int ele, int r, int c) {
+			this.ele = ele;
+			this.r = r;
+			this.c = c;
+		}
+		
+		public int compareTo(Pair o) {
+			return this.ele - o.ele;
+		}
+	}
+    
+	int[] rows;
+	int[] cols;
+	int[] par;
+	int[] rank;
+	
+    public int[][] matrixRankTransform(int[][] matrix) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        
+        rows = new int[n];
+        cols = new int[m];
+        par = new int[n * m];
+        rank = new int[n * m];
+        Pair[] arr = new Pair[n * m];
+        int count = 0;
+        
+        for(int i = 0; i < n; i++) {
+        	for(int j = 0; j < m; j++) {
+        		arr[count] = new Pair(matrix[i][j], i, j);
+        		count++;
+        	}
+        }
+        Arrays.sort(arr);
+        List<Pair> ls = new ArrayList<>();
+        int last = Integer.MIN_VALUE;
+        for(int i = 0; i < arr.length; i++) {
+        	if(arr[i].ele != last) {
+        		process(ls, matrix);
+        		last = arr[i].ele;
+        		ls = new ArrayList<>();
+        	}
+        	ls.add(arr[i]);
+        }
+        
+        process(ls, matrix);
+        return matrix;
+    }
+    
+    public int findp(int x, int[] par) {
+    	if(par[x] < 0)
+    		return x;
+    	int temp = findp(par[x], par);
+    	par[x] = temp;
+    	return temp;
+    }
+    
+    public void process(List<Pair> ls, int[][] matrix) {
+    	int n = matrix.length;
+    	int m = matrix[0].length;
+    	int[] par = new int[n + m];
+    	for(int i = 0; i < par.length; i++)
+            par[i] = -1;
+    	
+    	for(Pair p : ls) {
+    		int i = p.r;
+    		int j = p.c;
+    		
+    		int p1 = findp(i, par);
+    		int p2 = findp(n + j, par);
+    		
+    		if(p1 != p2) {
+    			int maxrank = 
+					Math.min(par[p1],Math.min(par[p2], -Math.max(rows[i], cols[j]) - 1));
+    			par[p2] = maxrank;
+    			par[p1] = p2;
+    		}
+    	}
+    	
+    	for(Pair p : ls) {
+        int i = p.r;
+    		int j = p.c;
+            
+    		int parp = findp(p.r, par);
+    		matrix[i][j] = -par[parp];
+            
+            rows[i] = matrix[i][j];
+            cols[j] = matrix[i][j];
+    	}
+    }
+}

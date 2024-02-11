@@ -48,7 +48,7 @@ public String minWindow(String s, String t) {
     
     //for frequency of chars in string t
     HashMap<Character,Integer> hm1=new HashMap<>();
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){   
         hm1.put(t.charAt(i),hm1.getOrDefault(t.charAt(i),0)+1);
     }
     
