@@ -1,0 +1,534 @@
+Arrays,,,,
+,,,,
+12th April,,,,
+Long Pressed Name,long-pressed-name,Logic,,https://leetcode.com/problems/long-pressed-name
+Container With Most Water,container-with-most-water,Done,,https://leetcode.com/problems/container-with-most-water
+Squares of a sorted array,,Logic,,https://leetcode.com/problems/squares-of-a-sorted-array/
+majority element,majority element,Done,,https://leetcode.com/problems/majority-element/
+,,,,
+13 April,,,,#ERROR!
+majority element 2,majority element 2,Done,,https://leetcode.com/problems/majority-element-ii/
+majority element general,majority element general,(HW),,http://geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/
+Next Greater Element III,next-greater-element-version3,Logic,,https://leetcode.com/problems/next-greater-element-iii
+max product of 3 numbers,max product of three numbers,Logic,,https://leetcode.com/problems/maximum-product-of-three-numbers/
+largest number atleast twice of others,largest atleast twice,Logic,,https://leetcode.com/problems/largest-number-at-least-twice-of-others/
+Max chunks to make sorted,max chunks to make sorted,,,https://leetcode.com/problems/max-chunks-to-make-sorted/
+,,,,
+14 April,,,,#ERROR!
+Max Chunks To Make Sorted II,max-chunks-to-make-sorted-ii,Done,,https://leetcode.com/problems/max-chunks-to-make-sorted-ii
+number of subarrays with bounded maximum,number with bounded max,Done,,https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
+wiggle sort,wiggle sort,Logic,,https://www.lintcode.com/problem/wiggle-sort/description
+Reverse vowels of a string,reverse vowels of a string,HW,,https://leetcode.com/problems/reverse-vowels-of-a-string/
+Product of Array Except Self,product-of-array-except-self,Logic,,https://leetcode.com/problems/product-of-array-except-self
+maximize distance to closest person,max distace to closest,Logic,,https://leetcode.com/problems/maximize-distance-to-closest-person/
+First missing positive,first missing positive,Done,,https://leetcode.com/problems/first-missing-positive/
+,,,,
+3rd May,,,,
+Range Addition,range-addition,Done,,https://www.lintcode.com/problem/range-addition/description
+best meeting points,best meeting point,Logic,https://www.lintcode.com/problem/best-meeting-point/,https://leetcode.com/problems/best-meeting-point/
+Min moves to equal array element,min moves to equal array element,HW,,https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/
+Sort Array By Parity,sort-array-by-parity,HW,,https://leetcode.com/problems/sort-array-by-parity
+Maximum Swap,maximum-swap,Logic,,https://leetcode.com/problems/maximum-swap
+,,,,
+4th May,,,,
+Min No. of Platform,min no. of platform,Logic,,https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+Sieve of Eratosthenes,Sieve,Done,,https://www.geeksforgeeks.org/sieve-of-eratosthenes/
+Segmented sieve,segmented sieve,Logic,,https://www.spoj.com/problems/PRIME1/cstart=10
+Two Sum,two sum,Logic,,https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/
+Two Difference,two difference,Logic,,https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
+Boats to Save People,save-people-using-boat,HW,,https://leetcode.com/problems/boats-to-save-people
+MIn Jump required with +i or -i allowed,min jump,Logic,https://leetcode.com/problems/reach-a-number/,https://www.geeksforgeeks.org/find-the-number-of-jumps-to-reach-x-in-the-number-line-from-zero/
+,,,,
+5th May,,,,
+partition labels,partition labels,Logic,,https://leetcode.com/problems/partition-labels/
+partition array into disjoint intervals,partition array into disjoint,HW,,https://leetcode.com/problems/partition-array-into-disjoint-intervals/
+Buddy nim,Buddy nim,Logic,,https://www.codechef.com/SNCKPE19/problems/BUDDYNIM
+maximum product subarray,max product subarray,Logic,,https://leetcode.com/problems/maximum-product-subarray/
+consecutive number sum,consecutive number sum,Logic,,https://leetcode.com/problems/consecutive-numbers-sum/
+push dominoes,Push dominoes,HW,,https://leetcode.com/problems/push-dominoes/
+,,,,
+10th May,,,,
+multiply strings,multiply strings,Done,,https://leetcode.com/problems/multiply-strings/
+max sum of two non overlapping subarrays,max sum of two non overlapping,Logic,,https://leetcode.com/problems/maximum-sum-of-two-non-overlapping-subarrays/
+Trapping rain water,Trapping rain water,Done,..,https://leetcode.com/problems/trapping-rain-water/
+Trapping rain water 2,Trapping rain water 2,Logic,,https://leetcode.com/problems/trapping-rain-water-ii/
+Sliding window maximum,Sliding window maximum,Logic,,https://leetcode.com/problems/sliding-window-maximum/
+Meeting rooms,Meeting rooms,HW,,https://leetcode.com/problems/meeting-rooms/
+Meeting rooms 2,Meeting rooms 2,HW,,https://leetcode.com/problems/meeting-rooms-ii/
+,,,,
+11th May,,,,
+Merge intervals,Merge Intervals,Done,,https://leetcode.com/problems/merge-intervals/
+Interval_List_Intersection,Interval list intersection,Logic,,https://leetcode.com/problems/interval-list-intersections/
+Insert Interval,Insert interval,Logic,,https://leetcode.com/problems/insert-interval/
+min number of arrow,min number of arrow,HW,,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
+Gas station,Gas station,logic,,https://leetcode.com/problems/gas-station/
+Sum of subsequence width,sum of subsequence widhts,Logic,,https://leetcode.com/problems/sum-of-subsequence-widths/
+,,,,
+12th May,,,,
+Car fleet,Car fleet,,,https://leetcode.com/problems/car-fleet/
+digit_multiplier,Smallest no. digit multiply to given number,,,https://www.geeksforgeeks.org/find-smallest-number-whose-digits-multiply-given-number-n/
+first negative in k size window,first negative,..,,https://www.geeksforgeeks.org/first-negative-integer-every-window-size-k/
+Extended euclidean algorithm,,,,
+Max Consecutive Ones II,max-consecutive-ones-ii,,https://www.lintcode.com/problem/max-consecutive-ones-ii/,https://leetcode.com/problems/max-consecutive-ones-ii
+max consecutive ones 3,max consecutive ones 3,,,https://leetcode.com/problems/max-consecutive-ones-iii/
+Maximum sum of smallest and second smallest,max sum smallest and second smallest,..,,https://www.geeksforgeeks.org/maximum-sum-of-smallest-and-second-smallest-in-an-array/
+smallest range from k lists,smallest from k lists,,,https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
+,,,,
+17th May,,,,
+KMP,KMP,Logic,https://reducedcomplexity.wordpress.com/2019/02/22/knuth-morris-prattkmp-pattern-searching-algorithm/,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/kmp-pattern-searching-official/ojquestion
+Shortest Palindrome,shortest-palindrome,Logic,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/shortest-palindrome-official/ojquestion
+Z algo,Z algo,Logic,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/z-algorithm-for-pattern-searching-official/ojquestion
+chef and secret password,Chef and secret password,Logic,,https://www.codechef.com/COOK103B/problems/SECPASS
+,,,,
+Recursion and backtracking,,,,
+18th May,,,,
+Permutation 1,Permutation 1,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/permutation-i-official/ojquestion
+Combinations 2,Combinations 2,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/combinations-2-official/ojquestion
+permutations 2,permutations 2,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/permutations-ii-official/ojquestion
+Combination 1,Combination 1,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/combinations-i-official/ojquestion
+queens combination 2d as 2d - box chooses,queens combination 2d as 2d - box chooses,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/queens-combinations-2das2d-box-chooses-official/ojquestion
+queens permutations 2d as 2d - box chooses,queens permutations 2d as 2d - box chooses,Done,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/queens-permutations-2das2d-box-chooses-official/ojquestion
+queens permutations 2d as 2d - queen chooses,queens permutations 2d as 2d - queen chooses,HW,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/queens-permutations-2das2d-queen-chooses-official/ojquestion
+queens combinations 2d as 2d - queen chooses,queens combinations 2d as 2d - queen chooses,HW,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/queens-combinations-2das2d-official/ojquestion
+,,,,
+19th May,,,,
+queens combination - 2d as 1d - queen chooses,,,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/queens-combinations-2das1d-queen-chooses-official/ojquestion
+Nqueens Combinations 2d as 1d - queen chooses,Nqueens Combinations 2d as 1d - queen chooses,,,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/level-2/nqueens-combinations-2das1d-queen-chooses-official/ojquestion
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+Trees,,,,
+1st June,,,,
+Preorder Traversal,Preorder traversal,Done,,https://leetcode.com/problems/binary-tree-preorder-traversal/
+Inorder Traversal,Inorder traversal,Done,,https://leetcode.com/problems/binary-tree-inorder-traversal/
+Postorder Traversal,Postorder traversal,Logic,,https://leetcode.com/problems/binary-tree-postorder-traversal/
+right side view,right view,Logic,,https://leetcode.com/problems/binary-tree-right-side-view/
+Left View,Left view,Logic,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/top-view-of-a-binarytree/ojquestion,https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+reverse level order,reverse level order,,,https://www.geeksforgeeks.org/reverse-level-order-traversal/
+Top View,Top view,Done,,https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+Bottom View,Bottom view,Done,,https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+,,,,
+2nd June,,,,
+Vertical order,vertical order,,,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+Diagonal Traversal,diagonal traversal,,,https://www.geeksforgeeks.org/diagonal-traversal-of-binary-tree/
+Boundary Traversal,Boundary traversal,,,https://leetcode.com/problems/boundary-of-binary-tree/
+Binary tree coloring game,Colring game,,,https://leetcode.com/problems/binary-tree-coloring-game/
+,,,,
+7th June,,,,
+Binary Tree Cameras,Binary tree camera,,,https://leetcode.com/problems/binary-tree-cameras/
+Max path sum,,,,https://leetcode.com/problems/binary-tree-maximum-path-sum/
+Recover binary search tree,recover binary search tree,,,https://leetcode.com/problems/recover-binary-search-tree/
+inorder succesor,inorder successor,https://www.lintcode.com/problem/inorder-successor-in-bst/,,https://leetcode.com/problems/inorder-successor-in-bst/
+,,,,
+8th June,,,,
+Count complete tree node,count complete tree node,,,https://leetcode.com/problems/count-complete-tree-nodes/
+closest binary search tree,closest binary search tree,,,https://leetcode.com/problems/closest-binary-search-tree-value/
+Closest binary search tree 2,closest binary search tree 2,https://www.lintcode.com/problem/901/,,https://leetcode.com/problems/closest-binary-search-tree-value-ii/
+Delete node in bst,,,,https://leetcode.com/problems/delete-node-in-a-bst/
+Construct from inorder and preorder,from in and pre,,,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+Construct from inorder and postorder,from in and post,,,https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+Inorder and level order,Inorder and level order,,,https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/
+,,,,
+9th June,,,,
+isBstPreorder,preorder isBst,,,https://leetcode.com/problems/validate-binary-search-tree/
+BST from Postorder,Bst from postorder,,,https://practice.geeksforgeeks.org/problems/construct-bst-from-post-order/1
+BST from preorder,BST from preorder,,,https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+Sum of distances in tree,sum of distances in tree,,,https://leetcode.com/problems/sum-of-distances-in-tree/
+image multiplication,image multiplication,,,https://practice.geeksforgeeks.org/problems/image-multiplication/0
+Next right pointer in each node,Next right pointer in each node,,,https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+Construct from pre and post,Pre and Post (HW),,,https://www.geeksforgeeks.org/full-and-complete-binary-tree-from-given-preorder-and-postorder-traversals/
+,,,,
+14th June,,,,
+https://codeforces.com/gym/304970/problem/A,,Click here if unable to open the link,,https://codeforces.com/gym/304970/problem/A
+Flatten binary tree to linked list,Flatten binary tree to linked list,,,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+Convert a binary tree to circular doubly linked list,Convert to circular DLL,,,https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/
+Conversion of sorted DLL to BST,DLL to BST,,,https://www.geeksforgeeks.org/in-place-conversion-of-sorted-dll-to-balanced-bst/
+Merge Two BST,Merge 2 BST,https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1,,https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/
+Lost tree,Lost tree,,,https://codeforces.com/contest/1534/problem/D
+,,,,
+15th June,,,,
+Lowest common ancestor in BST,LCA in BST,,,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+Lowest common ancestor,lowest common ancestor,,,https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+Fenwick tree,Fenwick tree,,,https://www.spoj.com/problems/FENTREE/
+serialize and deserialise,serialize and deserialize,,,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+Kth smallest element of BST,Kth smallest in BST,https://leetcode.com/problems/kth-smallest-element-in-a-bst/,,https://www.geeksforgeeks.org/kth-smallest-element-in-bst-using-o1-extra-space/
+clone a binary tree with random pointer,clone binary tree,,,https://www.geeksforgeeks.org/clone-binary-tree-random-pointers/
+,,,,
+16th June,,,,
+AVL insertion,,,,https://practice.geeksforgeeks.org/problems/avl-tree-insertion/1#
+AVL deletion,,,,https://practice.geeksforgeeks.org/problems/avl-tree-deletion/1
+,,,,
+,,,,
+Graphs,,,,
+21st June,,,,
+Number of Islands,number-of-islands,,,https://leetcode.com/problems/number-of-islands
+Number of Distinct Islands,number-of-distinct-islands,https://www.lintcode.com/problem/860,,https://leetcode.com/problems/number-of-distinct-islands
+Number of Enclaves,number-of-enclaves,,,https://leetcode.com/problems/number-of-enclaves
+Rotting Oranges,rotten-oranges,,,https://leetcode.com/problems/rotting-oranges
+Bipartite graph,Bipartite graph,,,https://leetcode.com/problems/is-graph-bipartite/
+Bus routes,Bus routes,,,https://leetcode.com/problems/bus-routes/
+,,,,
+23 June,,,,#ERROR!
+Prim's Algo,Prims algo,,,https://www.spoj.com/problems/MST/
+connecting cities with minimum cost,Connecting cities with min cost,,,https://www.geeksforgeeks.org/minimum-cost-connect-cities/
+Dijkstra algo,Dijkstra,,,https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+swim in rising water,,,,https://leetcode.com/problems/swim-in-rising-water/
+0-1 matrix,01-matrix,,,https://leetcode.com/problems/01-matrix/
+As far from land as possible,As far from land as possible(HW),,,https://leetcode.com/problems/as-far-from-land-as-possible/
+,,,,
+,,,,
+28 June,,,,#ERROR!
+bellman ford,Bellman ford,,,https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
+Strongly Connected Components (Kosaraju's Algo),,,,https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
+Mother Vertex,mother-vertex,,,https://practice.geeksforgeeks.org/problems/mother-vertex/1
+Coloring A Border,coloring-a-border,,,https://leetcode.com/problems/coloring-a-border
+Shortest bridge,(HW),,,https://leetcode.com/problems/shortest-bridge/
+,,,,
+29 June,,,,#ERROR!
+topological sorting,topological sorting,,,https://www.geeksforgeeks.org/topological-sorting/
+Kahn's algo,Kahn's algo,,,https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/
+course schedule 2,course schedule 2,,,https://leetcode.com/problems/course-schedule-ii/
+Alien Dictionary,Alien dictionary,https://leetcode.com/problems/alien-dictionary/,,https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
+DSU,,,,
+DFS vs DSU,,,,
+,,,,
+30 June,,,,#ERROR!
+Number of Islands II,number-of-islands-ii,,,https://www.lintcode.com/en/old/problem/number-of-islands-ii/#
+Regions Cut By Slashes,regions-cut-by-slashes,,,https://leetcode.com/problems/regions-cut-by-slashes
+Sentence Similarity II,sentence-similarity,"https://www.lintcode.com/problem/855/
+",,https://medium.com/@rebeccahezhang/leetcode-737-sentence-similarity-ii-2ca213f10115
+Satisfiability of Equality Equations,consistent-equations,,,https://leetcode.com/problems/satisfiability-of-equality-equations
+Redundant Connection,redundant-connection,,,https://leetcode.com/problems/redundant-connection
+evaluate division,(HW),.,,https://leetcode.com/problems/evaluate-division/
+,,,,
+5 July,,,,#ERROR!
+Redundant connection 2,redundant-connection 2,,,https://leetcode.com/problems/redundant-connection-ii/
+Minimize Malware Spread,minimize-malware-spread,,,https://leetcode.com/problems/minimize-malware-spread
+"
+",MST,https://www.spoj.com/problems/MST//,,
+optimize water distribution,,https://discuss.codechef.com/t/how-to-solve-this-google-interview-graph-question/35981,,https://leetcode.com/problems/optimize-water-distribution-in-a-village/
+Articulation point,articulation point and bridges,,,https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+Doctor Strange,doctor-strange.             .,https://www.spoj.com/problems/SUBMERGE/,,https://practice.geeksforgeeks.org/problems/doctor-strange/0
+,,,,
+6 July,,,,#ERROR!
+Job Sequencing,Job sequencing,.,,https://www.geeksforgeeks.org/job-sequencing-problem/
+Similar String Groups,,.,,https://leetcode.com/problems/similar-string-groups
+Eulerian Path in an Undirected Graph,euler-circuit-in-an-undirected-graph,,,https://practice.geeksforgeeks.org/problems/eulerian-path-in-an-undirected-graph/0
+Euler Circuit in a Directed Graph,euler-circuit-in-a-directed-graph,,,https://practice.geeksforgeeks.org/problems/euler-circuit-in-a-directed-graph/1
+Castle RUN,castle-run,,,https://practice.geeksforgeeks.org/problems/castle-run/0
+Min swaps required to sort array,Min swaps,,,https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
+min swaps to make 2 array identical,,.,,https://www.geeksforgeeks.org/minimum-swaps-to-make-two-array-identical/
+Little alawan's puzzle,,.,,https://codeforces.com/contest/1534/problem/C
+,,,,
+7 July,,,,#ERROR!
+Sliding Puzzle,,,,https://leetcode.com/problems/sliding-puzzle
+K-Similar Strings,k-similar-strings,.,,https://leetcode.com/problems/k-similar-strings
+Find the Maximum Flow,Ford fulkerson and Edmond's karp,.,,https://practice.geeksforgeeks.org/problems/find-the-maximum-flow/0
+Maximum Bipartite Matching,maximum-bipartite-matching,.,,https://practice.geeksforgeeks.org/problems/maximum-bipartite-matching/1
+,,,,
+,,,,
+12 July,,,,#ERROR!
+Reconstruct Itinerary,reconstruct-journey,,,https://leetcode.com/problems/reconstruct-itinerary
+Floyd Warshall,floyd-warshall,.,,https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall/0
+remove max number of edges to keep graph traversal,,,,https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/
+Sort item by group accord to dependencies,dependency sort,.,,https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/
+cheapest flight within k stops,cheapest flight within k stops,.,,https://leetcode.com/problems/cheapest-flights-within-k-stops/
+Smallest strings with swaps,(HW),.,,https://leetcode.com/problems/smallest-string-with-swaps/
+Bricks Falling when hit,,.,,https://leetcode.com/problems/bricks-falling-when-hit/
+Find evantual safe state,,.,,https://leetcode.com/problems/find-eventual-safe-states/
+,,,,
+,,,,
+HW,,,,
+Shortest distance from all buildings,https://www.lintcode.com/problem/803/,.,,https://leetcode.com/problems/shortest-distance-from-all-buildings/
+Shortest cycle in an undirected graph,,.,,https://www.geeksforgeeks.org/shortest-cycle-in-an-undirected-unweighted-graph/
+graph connectivity with threshold,,.,,https://leetcode.com/problems/graph-connectivity-with-threshold/
+great graph,,.,,https://codeforces.com/contest/1541/problem/C
+crackng the safe,Cracking the safe,.,,https://leetcode.com/problems/cracking-the-safe/
+,,,,
+HashMap and Heap,,,,
+19 July,,,,#ERROR!
+X of akind in a deck,X of a kind in a deck,,,https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/
+Check AP sequence,Check AP sequence,,,https://www.geeksforgeeks.org/check-whether-arithmetic-progression-can-formed-given-array/
+Array of doubled Pair,Array of doubled Pair,,,https://leetcode.com/problems/array-of-doubled-pairs/
+Morning Assembly,morning assembly,,,https://practice.geeksforgeeks.org/problems/morning-assembly/0
+Grid illumination,Grid illumination,,,https://leetcode.com/problems/grid-illumination/
+Brick wall,,,,https://leetcode.com/problems/brick-wall/
+Minimum number of refueling spots,minimum number of refueling spot,,,https://leetcode.com/problems/minimum-number-of-refueling-stops/
+Potions(hard version),,,,https://codeforces.com/contest/1526/problem/C2
+Rabbits in forest,Rabbits in a forest,,,https://leetcode.com/problems/rabbits-in-forest/
+Longest consecutive sequence,Longest consecutive sequence,,,https://leetcode.com/problems/longest-consecutive-sequence/
+,,,,
+,,,,
+20 July,,,,#ERROR!
+number of subarrays sum exactly k,number of subarrays with sum exactly k,,,https://leetcode.com/problems/subarray-sum-equals-k/
+Same differences,,https://codeforces.com/contest/1541/problem/B,,https://codeforces.com/contest/1520/problem/D
+Subarray sum Divisible by k,Sum divisibe by k,,,https://www.geeksforgeeks.org/count-sub-arrays-sum-divisible-k/
+subarray with equal number of 0 and 1,subarray with equal zero and one,,,https://www.geeksforgeeks.org/count-subarrays-equal-number-1s-0s/
+Substring with equal 0 1 and 2,substring with equal 0 1 2,,,https://www.geeksforgeeks.org/substring-equal-number-0-1-2/
+Count Pair whose sum is divisible by k,Pair sum divisibility(HW),,,https://www.geeksforgeeks.org/count-pairs-in-array-whose-sum-is-divisible-by-k/
+Longest consecutive 1's,longest consecutive 1's,,,https://www.geeksforgeeks.org/maximum-consecutive-ones-or-zeros-in-a-binary-array/
+Island perimeter,Island perimeter,,,https://leetcode.com/problems/island-perimeter/
+The skyline problem,The skyline problem,,,https://leetcode.com/problems/the-skyline-problem/
+,,,,
+,,,,
+21 July,,,,#ERROR!
+Pairs of coinciding points,Coinciding points,,,https://practice.geeksforgeeks.org/problems/pairs-of-non-coinciding-points/0
+length of largest subarray with continuous element,length of largest subarray with cont element,,,https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/
+length of largest subarray with cont element 2,length of largest subarray with cont element 2,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/largest-subarray-with-contiguous-elements-official/ojquestion,,https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-2/
+rearrange character string such that no two are same,rearrange such that no two are same,,,https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
+rearrange k distance apart,rearrange k distance apart,,,https://leetcode.com/problems/rearrange-string-k-distance-apart/
+same frequency after one removal,Same after one removal,,,https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/
+Mode of frequencies,Mode of frequencies,,,https://www.codechef.com/LTIME87B/problems/MODEFREQ/
+Line reflection,Line reflection,https://www.lintcode.com/problem/line-reflection/description,https://www.lintcode.com/problem/line-reflection/description,https://leetcode.com/problems/line-reflection/
+Insert Delete GetRandom O(1),Insert delete GetRand O(1),,,https://leetcode.com/problems/insert-delete-getrandom-o1/
+Insert delete get random duplicates allowed,Insert delete GetRand O(1) with duplicates,,,https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
+,,,,
+,,,,
+26 July,,,,#ERROR!
+Random pick with blacklist,random pick with blacklist,,,https://leetcode.com/problems/random-pick-with-blacklist/
+Find all anagrams in a string,Find all anagram,,,https://leetcode.com/problems/find-all-anagrams-in-a-string/
+Anagram Pallindrome,Anagram pallindrome,,,https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/
+Find smallest size of string containing all char of other,Smallest window string,,,https://leetcode.com/problems/minimum-window-substring/
+Group anagram,Group angram,,,https://leetcode.com/problems/group-anagrams/
+longest substring with unique character,longest substring with unique character,,,https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+Find Anagram Mapping,Find anagram mapping,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/find-anagram-mappings-official/ojquestion,,https://www.cnblogs.com/grandyang/p/8570939.html
+K anagram,K anagram,,,https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/
+smallest subarray with all the occurence of MFE,Smallest subarray with all MFE,,,https://www.geeksforgeeks.org/smallest-subarray-with-all-occurrences-of-a-most-frequent-element/
+,,,,
+27 July,,,,#ERROR!
+A simple fraction,A simple fraction,,,https://practice.geeksforgeeks.org/problems/a-simple-fraction/0
+Employee Free time,Employee free time,https://www.lintcode.com/problem/850/,,https://leetcode.com/problems/employee-free-time/
+Kth smallest element in sorted 2d matrix,kth smallest in 2d matrix,,,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+Kth smallest prime fraction,Kth smallest prime,,,https://leetcode.com/problems/k-th-smallest-prime-fraction/
+Isomorphic string,Isomorphic string,,,https://leetcode.com/problems/isomorphic-strings/
+minimum cost to connect sticks,minimum cost to connect sticks,,,https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+,,,,
+,,,,
+28 July,,,,#ERROR!
+minimum time to build blocks,minimum time to build blocks,http://lixinchengdu.github.io/algorithmbook/leetcode/minimum-time-to-build-blocks.html,,https://leetcode.com/problems/minimum-time-to-build-blocks/
+https://leetcode.com/problems/sliding-window-median/,Sliding window median,,,https://leetcode.com/problems/sliding-window-median/
+https://leetcode.com/problems/subarrays-with-k-different-integers/,Subarray with k different integers,,,https://leetcode.com/problems/subarrays-with-k-different-integers/
+Count number of nice subarrays,Count number of nice subarrays,,,https://leetcode.com/problems/count-number-of-nice-subarrays/
+Number of substring containing all 3 characters,Number of substring containing all 3 chars,,,https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/
+Fruit into basket,Fruit into basket,,,https://leetcode.com/problems/fruit-into-baskets/
+Replace the substring for balance string,Replace the substring for balanced string,,,https://leetcode.com/problems/replace-the-substring-for-balanced-string/
+,,,,
+2 Aug,,,,#ERROR!
+Write hashmap,Hashmap construction,,,https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/hashmap-official/ojquestion
+Minimum size subarray sum,Min size subarray sum,,,https://leetcode.com/problems/minimum-size-subarray-sum/
+Shortest subarray with sum atleast K,Shortest subarray with sum atleast K (HW),,,https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/
+Web of lies,Web of lies,,,https://codeforces.com/contest/1549/problem/C
+,,,,
+Stacks and queues,,,,
+3 Aug,,,,#ERROR!
+Daily Temperatures,Daily Temperatures,,,https://leetcode.com/problems/daily-temperatures/
+maximum difference between left and right smaller,Left Right smaller,,,https://www.geeksforgeeks.org/find-maximum-difference-between-nearest-left-and-right-smaller-elements/
+Largest Rectangular Area Histogram,Largest Area Histogram,,,https://leetcode.com/problems/largest-rectangle-in-histogram/
+maximu size binary matrix containing 1,maximum size binary matrix,,,https://leetcode.com/problems/maximal-rectangle/
+Valid Parentheses,Valid Parentheses,,,https://leetcode.com/problems/valid-parentheses/
+Length of longest valid substring,Valid Parentheses Substring,,,https://www.geeksforgeeks.org/length-of-the-longest-valid-substring/
+Count of duplicate Parentheses,Count of Duplicate Parentheses(HW),,,https://www.geeksforgeeks.org/find-expression-duplicate-parenthesis-not/
+Minimum Number of bracket reversal,Min Reversal,,,https://www.geeksforgeeks.org/minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced/
+Minimum Add To make Parentheses Valid,Making Parentheses Valid,,,https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
+Asteroid Collision,Asteroid Colllision,,,https://leetcode.com/problems/asteroid-collision/
+Backspace String Compare,Compare after deletion,,,https://leetcode.com/problems/backspace-string-compare/
+Remove K digits From number,Remove k digits,,,https://leetcode.com/problems/remove-k-digits/
+K reverse in a queue,K reverse in a queue,,,https://www.geeksforgeeks.org/reversing-first-k-elements-queue/
+Remove duplicate letters,Remove duplicate letter(TRY),,,https://leetcode.com/problems/remove-duplicate-letters/
+,,,,
+4 Aug,,,,#ERROR!
+Min Stack,min stack,,,https://leetcode.com/problems/min-stack/
+K stacks in a single array,K stacks in a single array,,,https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/
+K queue,K queue in a single array,,,https://www.geeksforgeeks.org/efficiently-implement-k-queues-single-array/
+ADAPTERS,,,,
+Print Binary Number,Binary Number upto n,,,https://www.geeksforgeeks.org/interesting-method-generate-binary-numbers-1-n/
+Validate Stack,Stack Validation,,,https://leetcode.com/problems/validate-stack-sequences/
+Longest Unbalanced Subsequence,,,,
+Infix evaluation,"Infix,Prefix,Postfix",,,https://leetcode.com/problems/basic-calculator/
+infix to postfix,,,,https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/infix-conversions-official/ojquestion
+infix to prefix,,,,https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/infix-conversions-official/ojquestion
+Postfix,postfix evaluation and conversions,,,https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/postfix-evaluation-conversions-official/ojquestion
+prefix,prefix evaluation and conversions,,,https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/prefix-official/ojquestion
+max frequency stack,max freq stack (HW),,,https://leetcode.com/problems/maximum-frequency-stack/
+,,,,
+,,,,
+DP,,,,
+9 Aug,,,,#ERROR!
+longest increasing subsequence,LIS(n^2),,,https://leetcode.com/problems/longest-increasing-subsequence/
+longest increasing subsequence,LIS(nLogn),,,https://leetcode.com/problems/longest-increasing-subsequence/
+building bridges,Building bridges,https://www.spoj.com/problems/BRDGHRD/,,https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
+Russian doll envelopes,Envelope stacking,,,https://leetcode.com/problems/russian-doll-envelopes/
+Box stacking,Stacking,,,https://practice.geeksforgeeks.org/problems/box-stacking/1
+minimum number of increasing subsequence,min number of inc subseq,,,https://www.geeksforgeeks.org/minimum-number-of-increasing-subsequences/
+weighted Job scheduling,weighted job scheduling,,,https://www.geeksforgeeks.org/weighted-job-scheduling-set-2-using-lis/?ref=rp
+,,,,
+10 Aug,,,,#ERROR!
+Paint fence,Paint fence,,,https://www.lintcode.com/problem/paint-fence/description
+Paint house,Paint house(Foundation),,,https://www.lintcode.com/problem/paint-house/description
+Paint house 2,Paint house 2(foundation),,,https://www.lintcode.com/en/old/problem/paint-house-ii/
+No. of binary string without consecutive 1,Without cons 1,,,https://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+Possible ways to construct the building,,,,https://www.geeksforgeeks.org/count-possible-ways-to-construct-buildings/
+https://www.geeksforgeeks.org/highway-billboard-problem/,Highway billboard problem,https://classroom.pepcoding.com/myClassroom/the-placement-program-pitampura-dec-29-2020/dp/highway-billboard-official/ojquestion,,https://www.geeksforgeeks.org/highway-billboard-problem/
+Catalan number,,,,
+Total no. of bst,Total bst,,,https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-with-n-keys/
+No. of balanced parentheses sequence,,,,
+Applications of Catalan numbers,,,,https://cp-algorithms.com/combinatorics/catalan-numbers.html
+Min cost path,min cost path,,,https://leetcode.com/problems/minimum-path-sum/
+Cherry pickup,Cherry pickup,,,https://leetcode.com/problems/cherry-pickup/
+,,,,
+,,,,
+11 Aug,,,,#ERROR!
+Cherry pickup 2,,,,https://leetcode.com/problems/cherry-pickup-ii/
+best time to buy and sell stock,best time to buy and sell,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+best time to buy and sell 2,best time to buy and sell 2,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+buy and sell with transaction fee,transaction fee,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+best time to buy and sell with cool down,cooldown,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+best time to buy and sell 3,best time to buy and sell 3,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+best time to but and sell 4,best time to buy and sell 4,,,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+,,,,
+16 Aug,,,,#ERROR!
+burst balloons,Burst balloons,,,https://leetcode.com/problems/burst-balloons/
+Minimum score triangulation,Min score triangulation,,,https://leetcode.com/problems/minimum-score-triangulation-of-polygon/
+boolean parenthesization,boolean parenthesization,,,https://www.lintcode.com/problem/boolean-parenthesization/description
+Min and max val of expression,Min and max,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/min-max-value-expression-official/ojquestion,,https://www.geeksforgeeks.org/minimum-maximum-values-expression/
+Optimal BST,optimal BST,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/optimal-bst-official/ojquestion,,https://www.geeksforgeeks.org/optimal-binary-search-tree-dp-24/
+Matrix chain multiplication,MCM (HW),,,https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/
+,,,,
+17 Aug,,,,#ERROR!
+Longest common subsequence,LCS,,,https://leetcode.com/problems/longest-common-subsequence/
+LCS triplet,LCS triplet,,,https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/
+Longest pallinddromic subsequence,LPS,,,https://leetcode.com/problems/longest-palindromic-subsequence/
+Count all pallindromic subsequence,,,,https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/
+Count distinct pallindromic subsequence,,,,https://leetcode.com/problems/count-different-palindromic-subsequences/
+Palindromic substrings,,,,https://leetcode.com/problems/palindromic-substrings/
+No. of sequence of type a^i+b^j+c^k,seq of given type,,,https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
+COunt of distinct subsequences,(HW),,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/count-distinct-subsequences-official/ojquestion
+2 egg 100 floor,,,,https://www.geeksforgeeks.org/puzzle-set-35-2-eggs-and-100-floors/
+egg drop,,,,https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
+Optimal strategy for a game,(HW),,,https://www.geeksforgeeks.org/optimal-strategy-for-a-game-dp-31/
+,,,,
+,,,,
+23 Aug,,,,#ERROR!
+Ugly number,,,,https://www.geeksforgeeks.org/ugly-numbers/
+Super ugly number,Super ugly number,,,https://www.geeksforgeeks.org/super-ugly-number-number-whose-prime-factors-given-set/
+Regular Expression Matching,,,,https://leetcode.com/problems/regular-expression-matching/
+Wildcard pattern matching,Wildcard(HW),,,https://www.geeksforgeeks.org/wildcard-pattern-matching/
+Palindrome partitioning,,,,https://leetcode.com/problems/palindrome-partitioning-ii/
+Longest Bitonic subsequence,,,,https://www.geeksforgeeks.org/longest-bitonic-subsequence-dp-15/
+Knights probability in chessboard,,,,https://www.geeksforgeeks.org/probability-knight-remain-chessboard/
+Longest repeating subsequence,HW,,,https://www.geeksforgeeks.org/longest-repeating-subsequence/
+,,,,
+24 Aug,,,,#ERROR!
+Max sum subarray with atleast k elements,,,,https://www.geeksforgeeks.org/largest-sum-subarray-least-k-numbers/
+Number of digit 1,Number of digit 1,,,https://leetcode.com/problems/number-of-digit-one/
+Classy Numbers,Classy numbers,,,https://codeforces.com/problemset/problem/1036/C
+Total Palindromic numbers,Total palindromic numbers,,,https://www.codechef.com/problems/AOPN
+Maximum product,(HW),,,https://codeforces.com/gym/100886/problem/G
+Jump game 2,,,,https://leetcode.com/problems/jump-game-ii/
+Longest common substring,(HW),,,https://www.geeksforgeeks.org/longest-common-substring-dp-29/
+,,,,
+25 Aug,,,,#ERROR!
+Scramble string,Scramble string,,,https://leetcode.com/problems/scramble-string/
+Word break problem,,,,https://www.geeksforgeeks.org/word-break-problem-dp-32/
+Shortest common superseq,,,,https://www.geeksforgeeks.org/shortest-common-supersequence/
+Frog jump,,,,https://leetcode.com/problems/frog-jump/
+Edit Distance,,,,https://leetcode.com/problems/edit-distance/
+Friends pairing problem,(HW),,,https://www.geeksforgeeks.org/friends-pairing-problem/
+rod cutting,(TRY),,,https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
+,,,,
+30 Aug,,,,#ERROR!
+Distinct subsequences,,,,https://leetcode.com/problems/distinct-subsequences/
+Remove Boxes,,,,https://leetcode.com/problems/remove-boxes/
+0-1 Knapsack,,,,https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+unbounded knapsack,,,,https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/
+Fractional knapsack,,,,https://www.geeksforgeeks.org/fractional-knapsack-problem/
+Partition equal subset sum,(HW),,,https://leetcode.com/problems/partition-equal-subset-sum/
+Ones and Zeores,(HW),,,https://leetcode.com/problems/ones-and-zeroes/
+Coin change combination,,,,https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/coin-change-combination-official/ojquestion
+Coin change permutation,,,,https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/coin-change-permutations-official/ojquestion
+Dungeon game,(HW),,,https://leetcode.com/problems/dungeon-game/
+,,,,
+Searching and sorting,,,,
+31 Aug,,,,#ERROR!
+Binary search,,,,
+median of two sorted array,median of two sorted array,,,https://leetcode.com/problems/median-of-two-sorted-arrays/
+capacity to ship within D days,capacity to ship within D days,already done,,https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+koko eating bananas,koko eating bananas,already done,,https://leetcode.com/problems/koko-eating-bananas/
+smallest divisor given a threshold,smallest divisor given a threshold,,,https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
+Painter's partition problem,painter's partition problem,,,https://www.interviewbit.com/problems/painters-partition-problem/#
+split array largest sum,split array largest sum,(HW),,https://leetcode.com/problems/split-array-largest-sum/
+,,,,
+,,,,
+1 Sept,,,,
+Kth smallest prime fraction,Kth smallest prime,,,https://leetcode.com/problems/k-th-smallest-prime-fraction/
+K-th smallest in sorted matrix,,,,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
+search in rotated sorted array,search in rotated sorted array,,,https://leetcode.com/problems/search-in-rotated-sorted-array/
+Find Minimum in rotated sorted array,,,,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+find min in rotated sorted array 2,,,,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+Search in rotated sorted array 2,(HW),,,https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
+Guess the kth zero,,,,https://codeforces.com/problemset/problem/1520/F1
+merge sort,merge sort,,,https://www.geeksforgeeks.org/merge-sort/
+count inversions,count inversions,,,https://www.geeksforgeeks.org/counting-inversions/
+,,,,
+8 Sept,,,,
+Chocolate distribution problem,,,,https://www.geeksforgeeks.org/chocolate-distribution-problem/
+Allocate books,,,,https://www.interviewbit.com/problems/allocate-books/
+Count sort,,,,https://www.geeksforgeeks.org/counting-sort/
+Radix sort,,,,https://www.geeksforgeeks.org/radix-sort/
+Quick sort,,,,https://www.geeksforgeeks.org/quick-sort/
+Bucket sort,,,,https://www.geeksforgeeks.org/bucket-sort-2/
+,,,,
+LinkedList,,,,
+7 Sept,,,,
+reverse LinkedList,Reverse LinkedList,,,https://leetcode.com/problems/reverse-linked-list/
+Find the middle element,middle element,,,https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/
+Floyd cycle,Detect loop in a linkedlist,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/cycle-node-in-linkedlist/ojquestion,,https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+Clone a linkedlist,clone,,,https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/
+Split circular Linkedlist,Split into two parts,,,https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/
+Intersection point of 2 linked list,Intersection point,,,https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+LRU Cache,LRU Cache,,,https://leetcode.com/problems/lru-cache/
+LFU cache,LFU Cache,,,https://leetcode.com/problems/lfu-cache/
+,,,,
+HW,,,,
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/fold-of-linkedlist/ojquestion,Fold a linkedlist,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/fold-of-linkedlist/ojquestion
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/unfold-of-linkedlist/ojquestion,Unfold a linkedlist,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/unfold-of-linkedlist/ojquestion
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/segregate-even-and-odd-nodes-in-a-link-list/ojquestion,Segregate even and odd nodes,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/segregate-even-and-odd-nodes-in-a-link-list/ojquestion
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/add-two-linkedlist/ojquestion,Add two linkedlist,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/add-two-linkedlist/ojquestion
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/subtract-two-linkedlist/ojquestion,Subtract two linkedlist,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/subtract-two-linkedlist/ojquestion
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/quicksort-in-linkedlist/ojquestion,Quick sort in linkedlist,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/quicksort-in-linkedlist/ojquestion
+,,,,
+,,,,
+Trie,,,,
+13 Sept,,,,
+Implement TRIE,,,,https://leetcode.com/problems/implement-trie-prefix-tree/
+Maximum xor of two numbers in an array,,,,https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
+Design add and search words,,,,https://leetcode.com/problems/design-add-and-search-words-data-structure/
+concatenated words,,,,https://leetcode.com/problems/concatenated-words/
+Word search 2,,,,https://leetcode.com/problems/word-search-ii/
+Map sum pairs,,,,https://leetcode.com/problems/map-sum-pairs/
+https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trie,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trie
+,,,,
+14 Sept,,,,
+Basic of bits,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/basics-of-bit-official/ojquestion
+Print RSB mask,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/print-value-of-rsb-mask-official/ojquestion
+Kernighans algorithm,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/kernighans-algo-official/ojquestion
+Grey Code,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/gray-code/ojquestion
+All repeating except one,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-except-one-official/ojquestion
+All repeating except 2,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-except-two-official/ojquestion
+RPD and Rap Sheet,,,,https://codeforces.com/problemset/problem/1543/D1
+Minimum number of software dev,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/minimum-number-of-software-developers-official/ojquestion
+Subsets of an array,,,,https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/subsets_of_array/topic
+Array Differentiation,,,,https://codeforces.com/problemset/problem/1552/D
+,,,,
+,,,,
+16 Sept,,,,
+One repeating and one missing,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/one-repeating-and-one-missing-official/ojquestion
+All repeating three times except 1,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-three-times-except-one-official/ojquestion
+Triplets - 1,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/triplets-1-official/ojquestion
+Reduce N to 1,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/reduce-n-to-1-official/ojquestion
+Pepcoder and BITS,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/pepcoder-and-bits-official/ojquestion
+XOR of sum of all pairs,,,,https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/xor-sum-pair-official/ojquestion
